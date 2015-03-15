@@ -4,8 +4,8 @@ class FunkyGameMode
   def initialize(gosu)
     @gosu  = gosu
     @stage = Stage.new(gosu, :funky)
-    @song = Gosu::Song.new(@gosu, MEDIA + 'Transpose.mp3')
-    @song.volume = 0.03
+#    @song = Gosu::Song.new(@gosu, MEDIA + 'Transpose.mp3')
+#    @song.volume = 0.03
     @button_status  = false
     @last_button    = nil
     @button_counter = 90
@@ -24,7 +24,7 @@ class FunkyGameMode
 
   
   def draw
-    #@song.play unless @song.playing?
+    # @song.play unless @song.playing?
     @stage.draw
   end
 
